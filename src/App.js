@@ -1,9 +1,8 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Content from './components/Content'
 import Project from './components/Project/Project'
-
-import './assets/style/root.css'
 
 class App extends React.Component {
 
