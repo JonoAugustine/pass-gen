@@ -1,4 +1,4 @@
-# Password Generator (HW3)
+# Password Generator 
 
 A simple, local password generator powered by JavaScript.
 Because the script is run locally, it is relatively secure...
