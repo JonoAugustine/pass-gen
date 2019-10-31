@@ -7,13 +7,9 @@ const char = {
 // Inclusive range
 const range = { min: 8, max: 128 };
 
-const inRange = int => {
-  return int >= range.min && int <= range.max;
-};
+const inRange = int => int >= range.min && int <= range.max;
 
-const random = size => {
-  return Math.floor(Math.random() * size);
-};
+const random = size => Math.floor(Math.random() * size);
 
 const newPassword = (lower, upper, num, spec, leng) => {
   // Ensure at least 1 type selected
