@@ -6,7 +6,6 @@ body {
 }
 
 div.card {
-  margin: auto;
   padding: 10px 0;
   background-color: #f9f9f9;
   color: black;
@@ -15,6 +14,7 @@ div.card {
 input {
   margin: 25px 0 25px 0;
   width: 80%;
+  font-size: 1em;
   text-align: center;
   color: black;
   background-color: transparent;
