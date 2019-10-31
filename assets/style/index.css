@@ -1,35 +1,39 @@
-textarea {
-    color: black;
-}
-
-button {
-    border-radius: 5px;
-    padding: 2%;
-    border: none;
-        background-color: green;
-    color: white;
-}
-
-button:active {
-    background-color: #4aaaa5;
-    color: black;
-}
-
-div.container {
-    width: 100%;
-    text-align: center;
-    display: inline-block;
+body {
+  width: 100%;
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
 }
 
 div.card {
-    margin: auto;
-    width: 30%;
-    height: 250px;
-    background-color: #dddedc;
-    color: black;
+  margin: auto;
+  padding: 10px 0;
+  background-color: #f9f9f9;
+  color: black;
 }
 
-.input {
-    margin: 25px 0 25px 0;
-    width: 50%;
+input {
+  margin: 25px 0 25px 0;
+  width: 80%;
+  text-align: center;
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+
+button {
+  padding: 2%;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+}
+
+button:hover {
+  background-color: #28e353;
+}
+
+button:active {
+  color: black;
+  background-color: #4aaaa5;
 }
