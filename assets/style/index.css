@@ -29,6 +29,10 @@ button {
   background-color: green;
 }
 
+button#btn_copy {
+  background-color: blue;
+}
+
 button:hover {
   background-color: #28e353;
 }

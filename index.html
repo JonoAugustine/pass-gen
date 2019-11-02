@@ -13,10 +13,17 @@
   <body>
     <div class="card">
       <div>
-        <input id="dest" disabled="true" placeholder="your password will appear here" />
+        <input
+          id="dest"
+          readonly
+          placeholder="your password will appear here"
+        />
       </div>
       <button id="btn_gen" onclick="gen()">
         Generate Password
+      </button>
+      <button id="btn_copy" onclick="copy()">
+        Copy to Clipboard
       </button>
     </div>
     <script src="assets/js/generator.js"></script>

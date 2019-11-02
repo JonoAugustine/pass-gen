@@ -29,7 +29,7 @@ const random = upperBound => Math.floor(Math.random() * upperBound);
  * @param {boolean} num Whether to use digits.
  * @param {boolean} spec Whether to use special characters.
  * @param {Number} leng The length of the password.
- * @returns The generated password if at least one character type is selected 
+ * @returns The generated password if at least one character type is selected
  * and the length is within range. `-1` if no character type is
  * selected. `-2` if the length is not in range.
  */
@@ -39,11 +39,13 @@ const newPassword = (lower, upper, num, spec, leng) => {
   // Ensure length in range
   if (!inRange(leng)) return -2;
 
+  // Build source string
   const src =
     (lower ? char.alpha.toLowerCase() : "") +
     (upper ? char.alpha : "") +
     (num ? char.number : "") +
     (spec ? char.special : "");
+  // Build password
   let out = "";
   for (var i = 0; i < leng; i++) {
     out += src[random(src.length)];
@@ -79,5 +81,21 @@ const gen = () => {
     default:
       input_box.value = pass;
       break;
+  }
+};
+
+/**
+ * Copy password to clipboard
+ */
+const copy = () => {
+  if (input_box.value == "") return;
+  input_box.focus();
+  input_box.select();
+
+  try {
+    if (document.execCommand("copy")) alert("Copied to clipboard");
+    else alert("Failed to copy");
+  } catch (err) {
+    alert("Failed to copy");
   }
 };
